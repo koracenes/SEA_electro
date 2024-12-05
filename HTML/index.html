@@ -3,74 +3,81 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Detroit Electrical Company</title>
-    <link rel="stylesheet" href="styles.css" />
+    <title>Power Transmission</title>
+    <link rel="stylesheet" href="styles2.css" />
   </head>
   <body>
-    <header class="hero">
-      <div class="container">
-        <h1>Power Up Your Life With Our Electrical Expertise</h1>
-        <p>We bring the light to your home, one wire at a time.</p>
-        <a href="#services" class="btn">Read More</a>
-      </div>
-    </header>
-
+    <!-- Navigation Bar -->
     <nav class="navbar">
-      <div class="container">
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#about">About</a></li>
+      <div class="navbar-container">
+        <a href="#home-page" class="logo">SEA d.o.o.</a>
+        <ul class="nav-links">
+          <li><a href="#home-page">Home</a></li>
+          <li><a href="#power-grid">Power Grid</a></li>
+          <li><a href="#about-us">About Us</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
     </nav>
 
-    <section id="services" class="services">
-      <div class="container">
-        <h2>Our Services</h2>
-        <div class="service-item">
-          <h3>Electrical Services</h3>
-          <p>Professional electrical solutions for homes and businesses.</p>
-        </div>
-        <div class="service-item">
-          <h3>Response Team</h3>
-          <p>Quick and reliable electrical support when you need it.</p>
-        </div>
-        <div class="service-item">
-          <h3>Vehicle Charging</h3>
-          <p>Efficient vehicle charging solutions for modern mobility.</p>
-        </div>
-      </div>
-    </section>
+    <!-- Hero Section -->
+    <div class="hero">
+      <h1>Power Transmission Solutions</h1>
+    </div>
 
-    <section id="projects" class="projects">
-      <div class="container">
-        <h2>Our Projects</h2>
-        <div class="project-gallery">
-          <img src="project1.jpg" alt="Project 1" />
-          <img src="project2.jpg" alt="Project 2" />
-          <img src="project3.jpg" alt="Project 3" />
-        </div>
-      </div>
-    </section>
-
-    <section id="about" class="about">
-      <div class="container">
-        <h2>About Us</h2>
+    <!-- Home Page Section -->
+    <section id="home-page">
+      <div class="content-overlay">
+        <h2>Who We Are</h2>
         <p>
-          We bring innovation and expertise to every electrical project. Whether
-          it's residential or commercial, we've got you covered.
+          SEA d.o.o. was founded in 2001. The activity of our company is the
+          construction and reconstruction of:
         </p>
+        <ul>
+          <li>Power line voltage level: 10kV, 20kV, 35kV ...</li>
+          <li>Substations 35/10kV, 20/0.4kV, 10/0.4kV</li>
+          <li>Low-voltage networks 0.4 kV</li>
+          <li>Construction and reconstruction of public lighting</li>
+        </ul>
       </div>
     </section>
 
-    <footer id="contact" class="footer">
-      <div class="container">
-        <h2>Contact Us</h2>
-        <p>Email: info@detroitelectrical.com | Phone: +123-456-7890</p>
+    <!-- Power Grid Section -->
+    <section id="power-grid">
+      <h2>Our Power Grid Services</h2>
+      <p>
+        We specialize in electrical infrastructure, including transmission
+        lines, substations, and low-voltage networks.
+      </p>
+      <div class="grid">
+        <div class="grid-item">
+          <h3>High-Voltage Lines</h3>
+          <p>Design and installation of 110kV and 220kV transmission lines.</p>
+        </div>
+        <div class="grid-item">
+          <h3>Substations</h3>
+          <p>
+            Building and maintaining transformer substations for efficient power
+            distribution.
+          </p>
+        </div>
+        <div class="grid-item">
+          <h3>Low-Voltage Networks</h3>
+          <p>
+            Developing and enhancing 0.4kV networks for residential and
+            commercial areas.
+          </p>
+        </div>
       </div>
+    </section>
+
+    <!-- Visual Grid Line Connection -->
+    <div class="grid-line horizontal"></div>
+    <div class="grid-line vertical"></div>
+
+    <!-- Footer Section -->
+    <footer>
+      <p>© 2024 SEA d.o.o. All rights reserved.</p>
     </footer>
   </body>
 </html>

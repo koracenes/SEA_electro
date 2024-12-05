@@ -1,0 +1,215 @@
+/* Global Styles */
+/* Navigation Bar */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgb(0, 0, 0); /* Transparent dark background */
+  padding: 15px 0;
+  z-index: 1000;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.navbar .logo {
+  font-size: 1.8rem;
+  color: #ffd700;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li {
+  display: inline;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #f1f1f1;
+  font-size: 1.2rem;
+  padding: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-links a:hover {
+  background-color: #ffd700;
+  color: #0a1a2f;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #0a1a2f; /* Dark Blue background to represent the industrial theme */
+  color: #f1f1f1; /* Light text for contrast */
+  margin: 0;
+  padding: 0;
+  padding-top: 80px; /* Adjust this based on the navbar height */
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Hero Section (Power Grid Theme) */
+.hero {
+  background-color: #1f2a41; /* Dark blue background representing the industrial look */
+  background-image: url("https://images.unsplash.com/photo-1593642532976-d31b6557fa5d"); /* Optional power-related image */
+  background-size: cover;
+  background-position: center;
+  height: 10%;
+  text-align: center;
+  color: #f1f1f1;
+  padding: 60px 0;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+/* Home Page Section */
+#home-page {
+  position: relative;
+  background-image: url("images/Home_bg.jpg"); /* Background image for the home page */
+  background-size: cover;
+  background-position: center;
+  padding: 60px 20px;
+  text-align: center;
+  color: #f1f1f1;
+}
+
+/* Container for the content with transparent background */
+.content-overlay {
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+  display: inline-block;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+/* Styling for the text */
+#home-page h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+#home-page p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+#home-page ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#home-page ul li {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+/* Power Grid Section */
+#power-grid {
+  background-color: #10233f; /* Dark blue background for the grid section */
+  padding: 50px 20px;
+  text-align: center;
+  color: #f1f1f1;
+}
+
+#power-grid h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+#power-grid p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+#power-grid .grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.grid-item {
+  background-color: #142d46; /* Slightly lighter blue background for grid items */
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.grid-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+.grid-item h3 {
+  font-size: 1.8rem;
+  color: #ffd700; /* Yellow for headings */
+  margin-bottom: 10px;
+}
+
+.grid-item p {
+  font-size: 1rem;
+}
+
+/* Grid Lines/Visual Connections */
+.grid-line {
+  position: absolute;
+  width: 2px;
+  background-color: #ffd700; /* Yellow, symbolizing energy lines */
+  z-index: -1;
+}
+
+.grid-line.horizontal {
+  height: 100%;
+  top: 50%;
+  left: 0;
+  right: 0;
+}
+
+.grid-line.vertical {
+  height: 2px;
+  top: 50%;
+  left: 0;
+  right: 0;
+}
+
+/* Footer Section */
+footer {
+  background-color: #1f2a41; /* Dark blue background for the footer */
+  text-align: center;
+  padding: 20px 0;
+  color: #f1f1f1;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  border-top: 2px solid #ffd700; /* Yellow border on top */
+}
+
+footer p {
+  margin: 0;
+}
