@@ -4,11 +4,13 @@ import "./Forms/Forms.css";
 import TaskManager from "./Pages/TaskManager.jsx";
 function App() {
   return (
-    <main className="App">
-      {/* <Regist /> */}
-      {/* <Login /> */}
-      <TaskManager />
-    </main>
+    <>
+      <main className="App">
+        {/* <Regist /> */}
+        {/* <Login /> */}
+        <TaskManager />
+      </main>
+    </>
   );
 }
 

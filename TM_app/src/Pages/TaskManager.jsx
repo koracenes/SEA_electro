@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Navbar from "./Navbar";
+import Navbar from "../Components/Navbar";
 import AllTasks from "../Components/TaskForm";
 import InProcess from "./InProcess";
-import Finished from "./pages/Finished";
-import CreateTask from "./pages/CreateTask";
+import Finished from "./Finished";
+import CreateTask from "./CreateTask";
+import "./PagesStyle.css";
 
 function TaskManager() {
   const [tasks, setTasks] = useState([]);
