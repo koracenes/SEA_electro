@@ -10,10 +10,22 @@
     <!-- Navigation Bar -->
     <nav class="navbar">
       <div class="navbar-container">
-        <a href="#home-page" class="logo">SEA d.o.o.</a>
+        <a href="#hero" class="logo">SEA d.o.o.</a>
         <ul class="nav-links">
-          <li><a href="#home-page">Home</a></li>
-          <li><a href="#power-grid">Power Grid</a></li>
+          <li><a href="#hero">Home</a></li>
+          <li class="dropdown">
+            <a href="#services" class="dropdown-toggle">Services</a>
+            <ul class="dropdown-menu">
+              <li><a href="#transmission-lines">Transmission Lines</a></li>
+              <li><a href="#substations">Substations</a></li>
+              <li><a href="#low-voltage-networks">Low Voltage Networks</a></li>
+              <li><a href="#public-lighting">Public Lighting</a></li>
+              <li>
+                <a href="#electrical-installations">Electrical Installations</a>
+              </li>
+            </ul>
+          </li>
+          <li><a href="#projects">Projects</a></li>
           <li><a href="#about-us">About Us</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
@@ -21,7 +33,7 @@
     </nav>
 
     <!-- Hero Section -->
-    <div class="hero">
+    <div class="hero" id="hero">
       <h1>Power Transmission Solutions</h1>
     </div>
 

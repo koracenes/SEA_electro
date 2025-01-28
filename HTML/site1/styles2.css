@@ -50,6 +50,48 @@
   color: #0a1a2f;
 }
 
+/* Dropdown Behavior */
+.dropdown {
+  position: relative;
+}
+
+.dropdown .dropdown-menu {
+  display: none; /* Hidden by default */
+  position: absolute;
+  top: 135%; /* Align below the parent */
+  left: 0;
+  background-color: #0a1a2f; /* Dark background for dropdown */
+  border-radius: 5px;
+  list-style: none;
+  padding: 10px 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  z-index: 999;
+  width: 200px; /* Fixed width for dropdown */
+}
+
+.dropdown .dropdown-menu li {
+  padding: 5px 20px;
+}
+
+.dropdown .dropdown-menu a {
+  color: #f1f1f1;
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown .dropdown-menu a:hover {
+  background-color: #ffd700;
+  color: #0a1a2f;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
 body {
   font-family: Arial, sans-serif;
   background-color: #0a1a2f; /* Dark Blue background to represent the industrial theme */
