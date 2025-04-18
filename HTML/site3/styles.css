@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  width: 100vw;
+  height: 70px;
+  background-color: rgb(9, 74, 107);
+  border-bottom: 5px solid rgb(37, 94, 125);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar {
+  width: 60%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: aquamarine;
+  padding: 0.8rem;
+}
+
+.logo_wrap {
+  background-color: yellow;
+  width: 20%;
+}
+
+.nav_links {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
