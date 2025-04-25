@@ -102,8 +102,9 @@ main {
   border: 1px solid white;
 }
 .sect2 {
-  width: 50%;
-
+  width: 250px;
+  height: 250px;
+  background-color: yellow;
   border: 1px solid white;
 }
 .sect2 img {
