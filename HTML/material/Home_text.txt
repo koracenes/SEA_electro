@@ -1,0 +1,14 @@
+<!-- == HOME == -->
+    <section class="landing">
+      <div class="landing-text">
+        <h5>Powering the Future</h5>
+        <h4>Innovative Energy Solutions</h4>
+        <h1>SEA elektro</h1>
+        <p>
+          Delivering reliable, sustainable, and cost-effective energy services
+          <br />
+          to industries, businesses, and communities worldwide.
+        </p>
+        <a href="#">Our Solutions</a>
+        <a href="#" class="ctaa"><i class="ri-play-fill"></i>Learn More</a>
+      </div>
