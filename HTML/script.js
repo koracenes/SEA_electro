@@ -20,3 +20,27 @@ const sr = ScrollReveal({
 sr.reveal(".landing-text", { origin: "top" });
 sr.reveal(".landing-image", { origin: "bottom", delay: 300 });
 sr.reveal(".social-icons", { origin: "left", delay: 400 });
+
+// Smooth scroll with 200px offset
+document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+  anchor.addEventListener("click", function (e) {
+    const targetId = this.getAttribute("href").substring(1);
+    const target = document.getElementById(targetId);
+
+    if (target) {
+      e.preventDefault();
+      const offset = 150;
+      const elementPosition = target.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - offset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth",
+      });
+
+      // Close menu if in mobile view
+      navList.classList.remove("open");
+      menuIcon.classList.remove("bx-x");
+    }
+  });
+});

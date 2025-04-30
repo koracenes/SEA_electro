@@ -28,19 +28,19 @@
     <header>
       <a href="#" class="logo"><img src="./Slike/Sea_logo.png" alt="" /></a>
       <ul class="navlist">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
 
-        <li><a href="#">Projects</a></li>
+        <li><a href="#projects">Projects</a></li>
         <li><a href="#">Services</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
       <div class="bx bx-menu" id="menu-icon"></div>
     </header>
 
     <!-- == HOME == -->
     <section>
-      <div class="landing">
+      <div class="landing" id="home">
         <div class="landing-text">
           <h5>Powering the Future</h5>
           <h4>Innovative Energy Solutions</h4>
@@ -71,10 +71,10 @@
     </div>
 
     <!-- == ABOUT == -->
-    <section>
+    <section id="about">
       <div class="about">
         <div class="about-text">
-          <h1>O nama</h1>
+          <h1>O NAMA</h1>
           <p>
             SEA d.o.o. osnovana je 2001.godine. Delatnost našeg preduzeća je
             izgradnja i rekonstrukcija:
@@ -116,12 +116,107 @@
     </section>
 
     <!-- == PROJECTS == -->
-    <section>
+    <section id="projects">
       <div class="projects">
-        <div class="projects-image">
-          <img src="./Slike/projects.jpg" alt="" />
+        <div class="projects-text">
+          <h1>PROJEKTI</h1>
+          <div class="box">
+            <div class="projects_card">
+              <h3>Projektovanje Elektro energetskih objekata (EEO)</h3>
+              <ul>
+                <li>Niskonaponskih mreža 1kV (nadzemnih i podzemnih)</li>
+                <li>Dalekovoda 10 i 20kV (nadzemnih i podzemnih )</li>
+                <li>
+                  Trafostanica 10(20) / 0,4 kV, svih vrsta (SBTS, MBTS, UZTS,
+                  ZTS)
+                </li>
+              </ul>
+              <p>
+                U skladu sa zakonom o izgradnji objekata bavimo se i dobijanjem
+                dozvola, elektronskim putem, za gradnju EEO.
+              </p>
+            </div>
+            <div class="projects_card">
+              <h3>Merenja i izdavanje atesta - Stručni nalaz</h3>
+              <p>
+                Električne instalacije se na osnovu zakonskih propisa moraju
+                proveravati
+              </p>
+              <ul>
+                <li>nakon izvođenja radova</li>
+                <li>nakon promena na električnoj instalaciji</li>
+                <li>periodnično</li>
+              </ul>
+              <p>
+                Za sva izvršena merenja dostavljamo stručni nalaz kojim se
+                potvrđuje ispravnost električnih instalacija ili se eventualno
+                ukazuje na njihovu neispravnost.
+              </p>
+            </div>
+
+            <div class="projects_card">
+              <p>
+                Stručni nalaz je potreban novoizgrađenim objektima za dobijanje
+                priključka na elektrodistributivnu mrežu i tehnički prijem,
+                objektima u postupku legalizacije, ugostiteljskim objektima, za
+                prijem toplotnih podstanica,gasnih instalacija .....
+              </p>
+              <p>
+                Izdavanje atesta o ispravnosti unutrašnje električne instalacije
+                objekata.
+              </p>
+              <p>
+                Vršimo proveru zaštitnih mera u elektro instalacijama, merenje i
+                ispitivanje, kao i izdavanje atesta (stručnog nalaza) elektro
+                instalacija.
+              </p>
+            </div>
+          </div>
         </div>
-        <div class="projects-text"></div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="contact-container">
+        <div class="contact-info">
+          <h1>Contact Us!</h1>
+          <div class="phones">
+            <div class="phone_box">
+              <p><i>📍</i>Vase Pelagića bb,<br />36300 Novi Pazar, Serbia</p>
+              <p><i>✉️</i>Email: seaelektro@hotmail.com</p>
+              <p><i>💼</i>PIB: 100746420 | MB: 17340212</p>
+              <p><i>⏰</i>Radno vreme: <br />pon-sub: 07:00 – 16:00h</p>
+            </div>
+            <div class="phone_box">
+              <p><i>📞</i>Tel: +381 20 338 080</p>
+              <p><i>📠</i>Fax: +381 20 338 081</p>
+              <p><i>📱</i>Mob: +381 65 966 6536</p>
+              <p><i>📱</i>Mob: +381 65 966 6551</p>
+              <p><i>📱</i>Mob: +381 65 966 6554</p>
+            </div>
+          </div>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8588.44367771957!2d20.535734203843095!3d43.16719957954409!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475629dd775bcb4f%3A0xcd8fb3c5543fab72!2sSEA%20d.o.o.%20Novi%20Pazar!5e1!3m2!1ssr!2srs!4v1746008088124!5m2!1ssr!2srs"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+
+        <div class="contact-form">
+          <h3><i>📧</i>Write us a few words about your project.</h3>
+          <form>
+            <input type="text" placeholder="Name" required />
+            <input type="email" placeholder="Email" required />
+            <input type="text" placeholder="Your Phone" />
+
+            <textarea placeholder="Message" rows="5"></textarea>
+            <button type="submit">Send a Message</button>
+          </form>
+        </div>
       </div>
     </section>
 
