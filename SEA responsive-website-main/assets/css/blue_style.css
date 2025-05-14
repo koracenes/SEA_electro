@@ -322,13 +322,15 @@ img {
 .button {
   display: inline-flex;
   background: var(--first-gradient);
-  color: var(--white-color);
+  color: var(--black-color);
+
   font-weight: var(--font-semi-bold);
   padding: 1rem 2rem;
   transition: box-shadow 0.4s;
 }
 .button:hover {
-  box-shadow: 0 8px 32px hsla(18, 95%, 55%, 0.3);
+  box-shadow: 0 0 20px rgba(248, 255, 0, 0.7); /* brighter glow on hover */
+  text-shadow: 2px 2px 5px rgb(1, 0, 2);
   color: var(--white-color);
 }
 
@@ -522,7 +524,9 @@ img {
   margin-bottom: 1.5rem;
 }
 /*=============== CONTACT ===============*/
-
+#contactBtn {
+  text-shadow: 2px 2px 5px rgb(1, 0, 2);
+}
 .contact__container {
   row-gap: 3rem;
   padding-block: 1.5rem 3rem;

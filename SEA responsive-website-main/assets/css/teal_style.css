@@ -7,23 +7,22 @@
 
   /*========== Colors ==========*/
   /*Color mode HSL(hue, saturation, lightness)*/
-  --first-color: hsl(18, 95%, 55%);
-  --second-color: hsl(42, 98%, 52%);
+  --first-color: hsl(63, 100%, 50%); /* Bright accent - #f8ff00 */
+  --second-color: hsl(200, 85%, 23%); /* Deep blue - #094a6b */
   --first-gradient: linear-gradient(
     90deg,
-    hsl(18, 95%, 55%),
-    hsl(18, 98%, 64%)
+    hsl(63, 100%, 50%),
+    hsl(63, 100%, 60%)
   );
-  --title-color: hsl(255, 12%, 12%);
-  --text-color: hsl(225, 12%, 24%);
-  --text-color-light: hsl(255, 4%, 70%);
-  --body-color: hsl(0, 0%, 100%);
-  --container-color: hsl(0, 0%, 100%);
+  --title-color: hsl(63, 100%, 50%); /* Accent for titles */
+  --text-color: hsl(200, 30%, 80%); /* Light text on dark bg */
+  --text-color-light: hsl(200, 20%, 60%); /* Dimmed text */
+  --body-color: hsl(200, 85%, 23%); /* #02131d - deep space */
+  --container-color: hsl(200, 94%, 13%); /* #022c42 - container */
   --white-color: hsl(0, 0%, 100%);
-  --black-color: hsl(255, 20%, 10%);
-  --gray-border: hsl(255, 6%, 90%);
-  --black-border: hsl(255, 10%, 20%);
-
+  --black-color: hsl(205, 87%, 6%); /* Same as body */
+  --gray-border: hsl(200, 15%, 25%); /* Slight border contrast */
+  --black-border: hsl(200, 20%, 15%); /* Deep border */
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
   --body-font: "Montserrat", sans-serif;
@@ -322,13 +321,15 @@ img {
 .button {
   display: inline-flex;
   background: var(--first-gradient);
-  color: var(--white-color);
+  color: var(--black-color);
+
   font-weight: var(--font-semi-bold);
   padding: 1rem 2rem;
   transition: box-shadow 0.4s;
 }
 .button:hover {
-  box-shadow: 0 8px 32px hsla(18, 95%, 55%, 0.3);
+  box-shadow: 0 0 20px rgba(248, 255, 0, 0.7); /* brighter glow on hover */
+  text-shadow: 2px 2px 5px rgb(1, 0, 2);
   color: var(--white-color);
 }
 
@@ -522,7 +523,9 @@ img {
   margin-bottom: 1.5rem;
 }
 /*=============== CONTACT ===============*/
-
+#contactBtn {
+  text-shadow: 2px 2px 5px rgb(1, 0, 2);
+}
 .contact__container {
   row-gap: 3rem;
   padding-block: 1.5rem 3rem;
