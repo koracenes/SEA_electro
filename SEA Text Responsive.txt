@@ -1,0 +1,143 @@
+========== HEADER ==========
+.nav__logo
+SEA Elektro
+
+.nav__link
+Početna - O Nama - Usluge - Projekti - Kontakt
+
+========== HOME ==========
+.home__title
+Kreirajte <br>
+Rešenja <br>
+Po Vašoj Meri
+
+.home__description
+Pružamo najkvalitetnije usluge u oblasti elektroinstalacija, izgradnje i održavanja – za vas i vašu porodicu.
+
+.button
+Naše Usluge
+
+.button__link
+Pogledajte Projekte
+
+.home__info-title .home__info-description
+20+
+Godina <br> Iskustva
+
+500+
+Završenih <br> Projekata
+
+========== ABOUT ==========
+.section__subtitle
+O NAMA
+
+.section__title
+Pružamo Najbolje <br> Elektrotehničke Usluge
+
+.about__description
+Naš tim stručnjaka posvećen je realizaciji svakog projekta s maksimalnom preciznošću i sigurnošću. Posvećeni smo kvalitetu i pouzdanosti.
+
+.about__list-item span
+Profesionalni električari
+Zagarantovan kvalitet
+Višegodišnje iskustvo
+Besplatna procena projekta
+
+.button
+Pogledajte Projekte
+
+========== SERVICES ==========
+.section__subtitle
+NAŠE USLUGE
+
+.section__title
+Kvalitetne Elektro Usluge
+
+.services__description
+Nudimo širok spektar usluga koje obezbeđuju sigurnost, efikasnost i dugotrajnost vaših sistema.
+
+.button
+Kontaktirajte Nas
+
+.services__title
+Elektroinstalacije u Stanovima i Kućama
+Industrijske Elektroinstalacije
+Održavanje i Popravke
+Pametne Instalacije i Automatika
+Ugradnja Rasvete i Uzemljenje
+
+.services__card p
+Radimo sa vrhunskim materijalima i iskusnim majstorima, pružajući sigurnost i efikasnost.
+
+========== PROJECTS ==========
+.section__subtitle
+NAŠI PROJEKTI
+
+.section__title
+Najnoviji Završeni <br> Projekti
+
+.projects__data span .projects__title .projects__data .projects__data p
+Elektroinstalacije
+Stambena zgrada
+Mart 12, 2025
+
+Održavanje i servis
+Industrijski pogon
+April 5, 2025
+
+Pametni sistem osvetljenja
+Porodična kuća
+Maj 10, 2025
+
+Realizacija kompletnih elektroinstalacija, uključujući osvetljenje, razvodne ormare i automatizaciju sistema.
+
+========== CONTACT ==========
+.section__subtitle
+KONTAKT
+
+.section__title
+Pišite Nam & Povežimo Se
+
+.contact__title .contact__info
+Gde se nalazimo
+Vase Pelagića bb <br>
+36300 Novi Pazar, Srbija
+
+Pozovite nas
+Tel: +381 20 338 080 <br>
+Fax: +381 20 338 081 <br>
+Mob: +381 65 966 6536, +381 65 966 6551, +381 65 966 6554
+
+Pišite nam
+Email: seaelektro@hotmail.com
+
+Radno vreme
+pon-sub: 07:00 – 16:00h
+
+========== FOOTER ==========
+.footer__logo span
+SEA Elektro
+
+.footer__description
+Gradimo sigurnost <br> i poverenje u svakom projektu.
+
+.footer__email
+Email: seaelektro@hotmail.com
+
+.footer__title .footer__link .footer__info
+Kompanija
+O Nama
+Usluge
+Projekti
+
+Informacije
+Vase Pelagića bb,<br> Novi Pazar
+07:00 – 16:00h
+
+Društvene mreže
+https://www.facebook.com/
+https://www.instagram.com/
+https://twitter.com/
+
+.footer__copy
+© Sva Prava Pripadaju SEA Elektro

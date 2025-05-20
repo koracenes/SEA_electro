@@ -6,23 +6,26 @@
   --header-height: 3.5rem;
 
   /*========== Colors ==========*/
-  /*Color mode HSL(hue, saturation, lightness)*/
-  --first-color: hsl(18, 95%, 55%);
-  --second-color: hsl(42, 98%, 52%);
+  /* Color mode HSL(hue, saturation, lightness) */
+  --first-color: hsl(210, 70%, 65%); /* Light sky blue */
+  --second-color: hsl(52, 100%, 60%); /* Soft sunshine yellow */
   --first-gradient: linear-gradient(
     90deg,
-    hsl(18, 95%, 55%),
-    hsl(18, 98%, 64%)
+    hsl(210, 70%, 65%),
+    hsl(210, 60%, 75%)
   );
-  --title-color: hsl(255, 12%, 12%);
-  --text-color: hsl(225, 12%, 24%);
-  --text-color-light: hsl(255, 4%, 70%);
-  --body-color: hsl(0, 0%, 100%);
-  --container-color: hsl(0, 0%, 100%);
-  --white-color: hsl(0, 0%, 100%);
-  --black-color: hsl(255, 20%, 10%);
-  --gray-border: hsl(255, 6%, 90%);
-  --black-border: hsl(255, 10%, 20%);
+
+  --title-color: hsl(210, 50%, 15%); /* Dark navy for contrast */
+  --text-color: hsl(210, 30%, 25%); /* Muted blue-gray */
+  --text-color-light: hsl(210, 30%, 50%); /* Mid blue-gray for secondary text */
+
+  --body-color: hsl(0, 0%, 100%); /* White body background */
+  --container-color: hsl(210, 50%, 95%); /* Light blue-gray containers */
+  --white-color: hsl(0, 0%, 100%); /* White */
+  --black-color: hsl(210, 40%, 15%); /* Soft dark blue (used for text/icons) */
+
+  --gray-border: hsl(210, 25%, 80%); /* Very light muted blue */
+  --black-border: hsl(210, 20%, 60%); /* Light navy-gray */
 
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
@@ -322,15 +325,13 @@ img {
 .button {
   display: inline-flex;
   background: var(--first-gradient);
-  color: var(--black-color);
-
+  color: var(--white-color);
   font-weight: var(--font-semi-bold);
   padding: 1rem 2rem;
   transition: box-shadow 0.4s;
 }
 .button:hover {
-  box-shadow: 0 0 20px rgba(248, 255, 0, 0.7); /* brighter glow on hover */
-  text-shadow: 2px 2px 5px rgb(1, 0, 2);
+  box-shadow: 0 8px 32px hsla(18, 95%, 55%, 0.3);
   color: var(--white-color);
 }
 
@@ -524,9 +525,7 @@ img {
   margin-bottom: 1.5rem;
 }
 /*=============== CONTACT ===============*/
-#contactBtn {
-  text-shadow: 2px 2px 5px rgb(1, 0, 2);
-}
+
 .contact__container {
   row-gap: 3rem;
   padding-block: 1.5rem 3rem;

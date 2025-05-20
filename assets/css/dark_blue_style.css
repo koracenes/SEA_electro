@@ -3,26 +3,29 @@
 
 /*=============== VARIABLES CSS ===============*/
 :root {
-  --header-height: 5.5rem;
+  --header-height: 3.5rem;
 
   /*========== Colors ==========*/
-  /*Color mode HSL(hue, saturation, lightness)*/
-  --first-color: hsl(63, 100%, 50%); /* Bright accent - #f8ff00 */
-  --second-color: hsl(200, 85%, 23%); /* Deep blue - #094a6b */
+  /* Color mode HSL(hue, saturation, lightness) */
+  --first-color: hsl(210, 85%, 35%); /* Deep strong blue */
+  --second-color: hsl(52, 100%, 50%); /* Bright golden yellow */
   --first-gradient: linear-gradient(
     90deg,
-    hsl(63, 100%, 50%),
-    hsl(63, 100%, 60%)
+    hsl(210, 85%, 35%),
+    hsl(210, 70%, 25%)
   );
-  --title-color: hsl(63, 100%, 50%); /* Accent for titles */
-  --text-color: hsl(200, 30%, 80%); /* Light text on dark bg */
-  --text-color-light: hsl(200, 20%, 60%); /* Dimmed text */
-  --body-color: hsl(200, 85%, 23%); /* #02131d - deep space */
-  --container-color: hsl(200, 94%, 13%); /* #022c42 - container */
-  --white-color: hsl(0, 0%, 100%);
-  --black-color: hsl(205, 87%, 6%); /* Same as body */
-  --gray-border: hsl(200, 15%, 25%); /* Slight border contrast */
-  --black-border: hsl(200, 20%, 15%); /* Deep border */
+
+  --title-color: hsl(0, 0%, 100%); /* Pure white */
+  --text-color: hsl(210, 40%, 90%); /* Soft white-blue */
+  --text-color-light: hsl(210, 30%, 70%); /* Faded light blue */
+
+  --body-color: hsl(210, 90%, 8%); /* Very dark navy blue */
+  --container-color: hsl(210, 80%, 12%); /* Dark blue for containers */
+  --white-color: hsl(0, 0%, 100%); /* Pure white */
+  --black-color: hsl(210, 90%, 5%); /* Deep navy (almost black) */
+
+  --gray-border: hsl(210, 20%, 40%); /* Muted blue-gray */
+  --black-border: hsl(210, 30%, 15%); /* Very dark gray-blue */
 
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
@@ -149,19 +152,15 @@ img {
   position: relative;
   height: var(--header-height);
   display: flex;
+
   justify-content: space-between;
   align-items: center;
 }
 
 .nav__logo {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   column-gap: 0.25rem;
-}
-
-.nav__logo img {
-  width: 20%;
 }
 
 .nav__logo span {
@@ -326,14 +325,14 @@ img {
 .button {
   display: inline-flex;
   background: var(--first-gradient);
-  color: var(--black-color);
+  color: var(--white-color);
   font-weight: var(--font-semi-bold);
   padding: 1rem 2rem;
   transition: box-shadow 0.4s;
 }
 .button:hover {
-  box-shadow: 0 8px 32px hsla(200, 85%, 23%, 0.3);
-  color: var(--body-color);
+  box-shadow: 0 8px 32px hsla(18, 95%, 55%, 0.3);
+  color: var(--white-color);
 }
 
 .button__link {
@@ -716,9 +715,6 @@ img {
   .section__title {
     font-size: 1.2rem;
   }
-  .nav__logo img {
-    height: 1rem;
-  }
   .home__title {
     font-size: 1.75rem;
   }
@@ -785,7 +781,6 @@ img {
   .section {
     padding-block: 7rem 2rem;
   }
-
   .nav {
     height: calc(var(--header-height)+2rem);
   }
@@ -810,7 +805,7 @@ img {
   }
   .bg-header .button,
   .bg-header .button:hover {
-    color: var(--black-color);
+    color: var(--white-color);
   }
   .home__container {
     grid-template-columns: 475px 550px;
