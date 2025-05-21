@@ -8,7 +8,8 @@
   /*========== Colors ==========*/
   /* Color mode HSL(hue, saturation, lightness) */
   --first-color: hsl(210, 70%, 65%); /* Light sky blue */
-  --second-color: hsl(52, 100%, 60%); /* Soft sunshine yellow */
+  --second-color: #ffd700;
+  /* --second-color: hsl(52, 100%, 60%); Soft sunshine yellow */
   --first-gradient: linear-gradient(
     90deg,
     hsl(210, 70%, 65%),
@@ -19,7 +20,7 @@
   --text-color: hsl(210, 30%, 25%); /* Muted blue-gray */
   --text-color-light: hsl(210, 30%, 50%); /* Mid blue-gray for secondary text */
 
-  --body-color: hsl(0, 0%, 100%); /* White body background */
+  --body-color: hsl(0, 0%, 98%); /* White body background */
   --container-color: hsl(210, 50%, 95%); /* Light blue-gray containers */
   --white-color: hsl(0, 0%, 100%); /* White */
   --black-color: hsl(210, 40%, 15%); /* Soft dark blue (used for text/icons) */
@@ -127,10 +128,10 @@ img {
 
 .section__subtitle {
   display: block;
-  font-size: 1.7rem;
-  font-weight: var(--font-semi-bold);
+  font-size: 1.9rem;
+  font-weight: var(--font-bold);
   color: var(--second-color);
-  text-shadow: 2px 2px var(--black-color);
+  text-shadow: 1px 1px 5px var(--black-color);
   margin-bottom: 0.5rem;
 }
 
@@ -463,7 +464,7 @@ img {
 /* Swiper class */
 .swiper {
   margin-inline: initial;
-  padding-bottom: 4rem;
+  padding-bottom: 1rem;
 }
 
 .swiper-button-prev::after,
@@ -483,11 +484,11 @@ img {
   color: var(--title-color);
 }
 .swiper-button-prev {
-  left: calc(50%-3rem);
+  left: calc(50% - 3rem);
 }
 
 .swiper-button-next {
-  right: calc(50%-3rem);
+  right: calc(50% - 3rem);
 }
 
 /*=============== PROJECTS ===============*/
