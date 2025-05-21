@@ -32,42 +32,68 @@ Završenih <br> Projekata
 O NAMA
 
 .section__title
-Pružamo Najbolje <br> Elektrotehničke Usluge
+Stručnjaci Za Elektroenergetiku Od 2001.
 
 .about__description
-Naš tim stručnjaka posvećen je realizaciji svakog projekta s maksimalnom preciznošću i sigurnošću. Posvećeni smo kvalitetu i pouzdanosti.
+SEA d.o.o. je osnovana 2001. godine i specijalizovana za projektovanje, izgradnju i rekonstrukciju elektroenergetskih objekata. Naš tim kombinuje stručno znanje i sertifikovano iskustvo kako bi pružio najviši nivo kvaliteta i sigurnosti u svakom projektu.
 
 .about__list-item span
+
 Profesionalni električari
 Zagarantovan kvalitet
 Višegodišnje iskustvo
 Besplatna procena projekta
 
 .button
-Pogledajte Projekte
+Pogledaj Projekte
 
 ========== SERVICES ==========
 .section__subtitle
 NAŠE USLUGE
 
 .section__title
-Kvalitetne Elektro Usluge
+Pouzdane Usluge <br />Elektroenergetike
 
 .services__description
-Nudimo širok spektar usluga koje obezbeđuju sigurnost, efikasnost i dugotrajnost vaših sistema.
+Naše rešenje uključuje kompletno projektovanje, isporuku opreme, izvođenje radova i izdavanje stručnih nalaza – sve u skladu sa važećim zakonima i standardima.
 
 .button
 Kontaktirajte Nas
 
+----Article 1----
 .services__title
-Elektroinstalacije u Stanovima i Kućama
-Industrijske Elektroinstalacije
-Održavanje i Popravke
-Pametne Instalacije i Automatika
-Ugradnja Rasvete i Uzemljenje
+Projektovanje i izgradnja
 
 .services__card p
-Radimo sa vrhunskim materijalima i iskusnim majstorima, pružajući sigurnost i efikasnost.
+Kompletno projektovanje i izvođenje elektroenergetskih objekata uključujući dozvole, planiranje i nadzor.
+
+----Article 2----
+.services__title
+Dalekovoda i Trafostanica
+
+.services__card p
+Izgradnja i rekonstrukcija dalekovoda (10kV, 20kV, 35kV) i trafostanica svih tipova (SBTS, MBTS, ZTS...).
+
+----Article 3----
+.services__title
+Niskonaponske mreže
+
+.services__card p
+Projektovanje i realizacija niskonaponskih mreža 0.4kV za stabilno i bezbedno snabdevanje električnom energijom.
+
+----Article 4----
+.services__title
+Elektroinstalacije u objektima
+
+.services__card p
+Izgradnja električnih instalacija jake struje u poslovnim i stambenim objektima – efikasno i pouzdano.
+
+----Article 5----
+.services__title
+Merenja i atesti
+
+.services__card p
+Stručna ispitivanja i izdavanje atesta za ispravnost elektroinstalacija i sistema uzemljenja, u skladu sa zakonima.
 
 ========== PROJECTS ==========
 .section__subtitle
@@ -96,17 +122,19 @@ Realizacija kompletnih elektroinstalacija, uključujući osvetljenje, razvodne o
 KONTAKT
 
 .section__title
-Pišite Nam & Povežimo Se
+Pišite Nam i Gradimo Zajedno
 
 .contact__title .contact__info
 Gde se nalazimo
 Vase Pelagića bb <br>
 36300 Novi Pazar, Srbija
 
-Pozovite nas
-Tel: +381 20 338 080 <br>
-Fax: +381 20 338 081 <br>
-Mob: +381 65 966 6536, +381 65 966 6551, +381 65 966 6554
+Telefon:
++381 20 338 080 (Tel)
++381 20 338 081 (Fax)
++381 65 966 6536
++381 65 966 6551
++381 65 966 6554
 
 Pišite nam
 Email: seaelektro@hotmail.com
@@ -119,7 +147,7 @@ pon-sub: 07:00 – 16:00h
 SEA Elektro
 
 .footer__description
-Gradimo sigurnost <br> i poverenje u svakom projektu.
+Gradimo budućnost sa energijom, stručnošću i poverenjem.
 
 .footer__email
 Email: seaelektro@hotmail.com

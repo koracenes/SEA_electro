@@ -127,9 +127,10 @@ img {
 
 .section__subtitle {
   display: block;
-  font-size: var(--normal-font-size);
+  font-size: 1.7rem;
   font-weight: var(--font-semi-bold);
   color: var(--second-color);
+  text-shadow: 2px 2px var(--black-color);
   margin-bottom: 0.5rem;
 }
 
@@ -331,7 +332,7 @@ img {
   transition: box-shadow 0.4s;
 }
 .button:hover {
-  box-shadow: 0 8px 32px hsla(18, 95%, 55%, 0.3);
+  box-shadow: 0 5px 12px var(--black-border);
   color: var(--white-color);
 }
 
