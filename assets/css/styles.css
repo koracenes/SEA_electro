@@ -7,18 +7,48 @@
 
   /*========== Colors ==========*/
   /*Color mode HSL(hue, saturation, lightness)*/
-  --first-color: #094a6b;
-  --second-color: #f8ff00;
-  --first-gradient: linear-gradient(90deg, #094a6b, #022c42);
-  --title-color: #ffffff;
-  --text-color: #e6f0ff;
-  --text-color-light: #aac7e6;
-  --body-color: #02131d;
-  --container-color: #022c42;
-  --white-color: #ffffff;
-  --black-color: #02131d;
-  --gray-border: #235473;
-  --black-border: #0d1c29;
+  /* ========== Default (Light Theme) ========== */
+  /* ========== Default (Light Theme) ========== */
+  :root {
+    --first-color: hsl(210, 70%, 65%);
+    --second-color: hsl(52, 100%, 60%);
+    --first-gradient: linear-gradient(
+      90deg,
+      hsl(210, 70%, 65%),
+      hsl(210, 60%, 75%)
+    );
+
+    --title-color: hsl(210, 50%, 15%);
+    --text-color: hsl(210, 30%, 25%);
+    --text-color-light: hsl(210, 30%, 50%);
+
+    --body-color: hsl(0, 0%, 100%);
+    --container-color: hsl(210, 50%, 95%);
+    --white-color: hsl(0, 0%, 100%);
+    --black-color: hsl(210, 40%, 15%);
+
+    --gray-border: hsl(210, 25%, 80%);
+    --black-border: hsl(210, 20%, 60%);
+  }
+
+  /* ========== Dark Theme ========== */
+  [data-theme="dark"] {
+    --first-color: #094a6b;
+    --second-color: #f8ff00;
+    --first-gradient: linear-gradient(90deg, #094a6b, #022c42);
+
+    --title-color: #ffffff;
+    --text-color: #e6f0ff;
+    --text-color-light: #aac7e6;
+
+    --body-color: #02131d;
+    --container-color: #022c42;
+    --white-color: #ffffff;
+    --black-color: #02131d;
+
+    --gray-border: #235473;
+    --black-border: #0d1c29;
+  }
 
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/

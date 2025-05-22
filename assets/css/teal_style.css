@@ -483,11 +483,11 @@ img {
   color: var(--title-color);
 }
 .swiper-button-prev {
-  left: calc(50%-3rem);
+  left: calc(50% - 3rem);
 }
 
 .swiper-button-next {
-  right: calc(50%-3rem);
+  right: calc(50% - 3rem);
 }
 
 /*=============== PROJECTS ===============*/

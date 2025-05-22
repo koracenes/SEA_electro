@@ -100,3 +100,24 @@ sr.reveal(".home__images", { origin: "bottom", delay: 1000 });
 sr.reveal(".about__images, .contact__img", { origin: "left" });
 sr.reveal(".about__data, .contact__data", { origin: "right" });
 sr.reveal(".projects__card", { interval: 100 });
+
+// Toggle between light and dark themes
+const themeSelect = document.getElementById("theme");
+const themeLink = document.getElementById("theme-style");
+
+themeSelect.addEventListener("change", function () {
+  const selectedTheme = themeSelect.value;
+  themeLink.setAttribute("href", `assets/css/${selectedTheme}_style.css`);
+});
+// Load theme from localStorage if exists
+const savedTheme = localStorage.getItem("theme");
+if (savedTheme) {
+  themeSelect.value = savedTheme;
+  themeLink.setAttribute("href", `assets/css/${savedTheme}_style.css`);
+}
+
+themeSelect.addEventListener("change", function () {
+  const selectedTheme = themeSelect.value;
+  themeLink.setAttribute("href", `assets/css/${selectedTheme}_style.css`);
+  localStorage.setItem("theme", selectedTheme);
+});
