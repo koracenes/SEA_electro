@@ -940,6 +940,12 @@ img {
   .contact__card {
     border-width: 3px;
   }
+
+  .contact__data a:visited,
+  .contact__data a:active {
+    color: var(--text-color);
+  }
+
   .contact__title {
     font-size: var(--h3-font-size);
   }
