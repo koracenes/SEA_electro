@@ -349,83 +349,14 @@
           > -->
           <h2 class="section__title">KONTAKT</h2>
           <div class="contact__container grid">
-            <!-- <img
+            <img
               src="assets/img/contact-img.png"
               alt="image"
               class="contact__img"
-            /> -->
-            <!-- EMAIL FIELD -->
-            <div class="contact_mail">
-              <h2>Pošaljite email</h2>
-              <form action="#">
-                <!-- INPUT BOX 1 -->
+            />
+            <!-- EMAIL FORM START -->
 
-                <div class="input-box">
-                  <div class="input-field field">
-                    <input
-                      type="text"
-                      placeholder="Full Name"
-                      id="name"
-                      class="item"
-                      autocomplete="off"
-                    />
-                    <div class="error-txt">Full Name can't be blank</div>
-                  </div>
-
-                  <div class="input-field field">
-                    <input
-                      type="text"
-                      placeholder="Email adress"
-                      id="email"
-                      class="item"
-                      autocomplete="off"
-                    />
-                    <div class="error-txt">Email can't be blank</div>
-                  </div>
-                </div>
-
-                <!-- INPUT BOX 2 -->
-
-                <div class="input-box">
-                  <div class="input-field field">
-                    <input
-                      type="text"
-                      placeholder="Phone number"
-                      id="phone"
-                      class="item"
-                      autocomplete="off"
-                    />
-                    <div class="error-txt">Phone Number can't be blank</div>
-                  </div>
-
-                  <div class="input-field field">
-                    <input
-                      type="text"
-                      placeholder="Subject"
-                      id="subject"
-                      class="item"
-                      autocomplete="off"
-                    />
-                    <div class="error-txt">Subject can't be blank</div>
-                  </div>
-                </div>
-                <!-- TEXT AREA -->
-                <div class="text-area field">
-                  <textarea
-                    name=""
-                    id="message"
-                    cols="30"
-                    rows="10"
-                    placeholder="Your Message"
-                    class="item"
-                    autocomplete="off"
-                  ></textarea>
-                  <div class="error-txt">Message can't be blank</div>
-                  <button class="button" type="submit">Send Message</button>
-                </div>
-              </form>
-            </div>
-
+            <!-- EMAIL FORM END -->
             <div class="contact__data grid">
               <!-- CONTACT CARD 1 -->
               <a
@@ -568,5 +499,9 @@
 
     <!--=============== MAIN JS ===============-->
     <script src="assets/js/main.js"></script>
+
+    <!--=============== SMTPJ ===============-->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   </body>
 </html>

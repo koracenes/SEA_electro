@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /*=============== CONTACT MAIL FORM ===============*/
+      .contact_mail {
+        width: 320px;
+      }
+
+      .contact_mail form {
+        width: 520px;
+        text-align: center;
+      }
+
+      form .input-box {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .input-box .input-field {
+        width: 48.5%;
+      }
+      .field .item {
+        width: 100%;
+        padding: 18px;
+        background: var(--container-color);
+        border: 2px solid var(--gray-border);
+        outline: none;
+        border-radius: 6px;
+        font-size: var(--normal-font-size);
+        color: var(--white-color);
+        margin: 0.3rem 0;
+      }
+
+      .field.error.item {
+        border-color: #d93025;
+      }
+      .field .item::placeholder {
+        color: var(--text-color-light);
+      }
+      .field .error-txt {
+        font-size: var(--normal-font-size);
+        color: #d93025;
+        margin: -5px 0 10px;
+        text-align: left;
+        display: none;
+      }
+      form .text-area .item {
+        resize: none;
+      }
+      form .text-area .error-txt {
+        margin-top: -0.3rem;
+      }
+
+      form button {
+        padding: 12px 32px;
+        border: none;
+        outline: none;
+        border-radius: 6px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- EMAIL FORM START -->
+    <div class="contact_mail">
+      <h2>Pošaljite email</h2>
+      <form action="#">
+        <!-- INPUT BOX 1 -->
+
+        <div class="input-box">
+          <div class="input-field field">
+            <input
+              type="text"
+              placeholder="Full Name"
+              id="name"
+              class="item"
+              autocomplete="off"
+            />
+            <div class="error-txt">Full Name can't be blank</div>
+          </div>
+
+          <div class="input-field field">
+            <input
+              type="text"
+              placeholder="Email adress"
+              id="email"
+              class="item"
+              autocomplete="off"
+            />
+            <div class="error-txt">Email can't be blank</div>
+          </div>
+        </div>
+
+        <!-- INPUT BOX 2 -->
+
+        <div class="input-box">
+          <div class="input-field field">
+            <input
+              type="text"
+              placeholder="Phone number"
+              id="phone"
+              class="item"
+              autocomplete="off"
+            />
+            <div class="error-txt">Phone Number can't be blank</div>
+          </div>
+
+          <div class="input-field field">
+            <input
+              type="text"
+              placeholder="Subject"
+              id="subject"
+              class="item"
+              autocomplete="off"
+            />
+            <div class="error-txt">Subject can't be blank</div>
+          </div>
+        </div>
+        <!-- TEXT AREA -->
+        <div class="text-area field">
+          <textarea
+            name=""
+            id="message"
+            cols="30"
+            rows="10"
+            placeholder="Your Message"
+            class="item"
+            autocomplete="off"
+          ></textarea>
+          <div class="error-txt">Message can't be blank</div>
+          <button class="button" type="submit">Send Message</button>
+        </div>
+      </form>
+    </div>
+    <!-- EMAIL FORM END -->
+  </body>
+</html>

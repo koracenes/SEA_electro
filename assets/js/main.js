@@ -97,6 +97,65 @@ sr.reveal(
   ".home__content, .services__data, services__swiper, .footer__container"
 );
 sr.reveal(".home__images", { origin: "bottom", delay: 1000 });
-sr.reveal(".about__images, .contact__img", { origin: "left" });
+sr.reveal(".about__images, .contact_mail, .contact__container img", {
+  origin: "left",
+});
 sr.reveal(".about__data, .contact__data", { origin: "right" });
 sr.reveal(".projects__card", { interval: 100 });
+
+/*=============== EMAIL FORM ===============*/
+
+const form = document.querySelector("form");
+const fullName = document.getElementById("name");
+const email = document.getElementById("email");
+const phone = document.getElementById("phone");
+const subject = document.getElementById("subject");
+const mess = document.getElementById("message");
+
+function sendEmail() {
+  const bodyMessage = `Full name: ${fullName.value} <br> Email: ${email.value} <br>
+  Phone Number: ${phone.value}<br> Messsage: ${mess.value}`;
+  Email.send({
+    Host: "smtp.elasticemail.com",
+    Username: "ajdacamovic@gmail.com",
+    Password: "409C97E3BFBA665CAAA3AF14E6C225A30779",
+    To: "ajdacamovic@gmail.com",
+    From: "ajdacamovic@gmail.com",
+    Subject: subject.value,
+    Body: bodyMessage,
+  }).then((message) => {
+    if (message == "OK") {
+      Swal.fire({
+        title: "Success!",
+        text: "Message sent successfuly!",
+        icon: "success",
+      });
+    }
+  });
+}
+
+function checkInputs() {
+  const items = document.querySelectorAll(".item");
+  for (const item of items) {
+    if (item.value == "") {
+      item.classList.add("error");
+      item.parentElement.classList.add("error");
+    }
+    item.addEventListener("keyup", () => {
+      if (item.value != "") {
+        item.classList.remove("error");
+        item.parentElement.classList.remove("error");
+      } else {
+        item.classList.add("error");
+        item.parentElement.classList.add("error");
+      }
+    });
+  }
+}
+
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+  checkInputs();
+
+  // sendEmail();
+});
