@@ -24,6 +24,10 @@
   --gray-border: hsl(200, 15%, 25%); /* Slight border contrast */
   --black-border: hsl(200, 20%, 15%); /* Deep border */
 
+  /*LOGO COLORS*/
+  --logo-blue: hsl(244, 100%, 50%);
+  --logo-red: hsl(0, 100%, 50%);
+
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
   --body-font: "Montserrat", sans-serif;
@@ -155,24 +159,34 @@ img {
 
 .nav__logo {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   column-gap: 0.25rem;
-}
-
-.nav__logo img {
   width: 20%;
 }
 
+.SEA_thunder {
+  width: 1.3rem;
+}
 .nav__logo span {
   color: var(--white-color);
   font-weight: var(--font-semi-bold);
   transition: color 0.4s;
 }
+/* .nav__logo i {
+  color: var(--logo-red);
+  font-size: 2rem;
+  text-shadow: 2px 1px 5px var(--white-color);
+} */
 
-.nav__logo i {
-  color: var(--first-color);
-  font-size: 1.5rem;
+.logo_SE {
+  text-align: center;
+}
+.logo_SEA {
+  width: 4rem;
+}
+.logo_elektro {
+  font-size: 0.6rem;
 }
 .nav__toggle,
 .nav__close {
@@ -310,6 +324,12 @@ img {
   position: absolute;
   left: 0;
   bottom: -3.5rem;
+}
+.home__img-3 {
+  height: 20%;
+  position: absolute;
+  right: 5%;
+  bottom: -25%;
 }
 
 .home__lines {
@@ -721,6 +741,9 @@ img {
   .nav__logo img {
     height: 1rem;
   }
+  .logo_elektro {
+    font-size: 1px;
+  }
   .home__title {
     font-size: 1.75rem;
   }
@@ -766,6 +789,9 @@ img {
 @media screen and (min-width: 760px) {
   .nav__menu {
     width: 50%;
+  }
+  .logo_elektro {
+    font-size: 0.6rem;
   }
   .projects__container {
     grid-template-columns: repeat(2, 330px);
@@ -814,6 +840,7 @@ img {
   .bg-header .button:hover {
     color: var(--black-color);
   }
+
   .home__container {
     grid-template-columns: 475px 550px;
     column-gap: 6rem;
@@ -850,6 +877,7 @@ img {
     left: -7rem;
     bottom: -8rem;
   }
+
   .home__lines {
     object-position: center;
   }
@@ -967,6 +995,9 @@ img {
   }
   .footer__title {
     margin-bottom: 1.5rem;
+  }
+  .footer__container img {
+    width: 15rem;
   }
   .footer__links,
   .footer__list {
